@@ -1,77 +1,138 @@
 local M = {}
 
-local palette = {
-	black = "#0B0B0B",
-	grey = "#8F847B",
-	grey_light = "#BEB6AE",
-	grey_dark = "#3A3A3A",
-	blue = "#6CB4EE",
-	yellow = "#F0D020",
-	yellow_strong = "#F8C630",
-	yellow_light = "#FFFD99",
-	brown_orange = "#DD6644",
-	orange = "#F29559",
-	red = "#FF4040",
-	purple = "#583641",
-}
-local colors = {
-	background = palette.black,
-	foreground = palette.grey_light,
-	keyword = palette.blue,
-	func = palette.red,
-	string = palette.brown_orange,
-	comment = palette.grey,
-	variable = palette.yellow,
-	variable_root = palette.grey,
-	number = palette.yellow_strong,
-	cursorline = palette.purple,
-	cursorcolumn = palette.yellow_light,
-	visual = palette.yellow_strong,
-	constant = palette.yellow,
-	preprocessor = palette.blue,
-	special = palette.blue,
-	line_number = palette.grey,
-	cursor_line_number = palette.yellow,
-	non_text = palette.grey,
-}
-
 local function hl(group, color)
-	vim.api.nvim_set_hl(0, group, color)
+  vim.api.nvim_set_hl(0, group, color)
 end
 
+local palette = {
+  black = "#0B0B0B",
+  grey = "#8F847B",
+  grey_light = "#BEB6AE",
+  grey_dark = "#3A3A3A",
+
+  yellow = "#D4A12E",
+  yellow_light = "#E0B84A",
+  yellow_pale = "#F2CA72",
+  yellow_strong = "#F0D020",
+
+  brown_orange = "#C97C47",
+  orange = "#D98A5D",
+
+  red = "#D16D69",
+  red_light = "#E0898D",
+
+  purple = "#785660",
+  blue = "#5F99D3",
+
+  beige = "#C4A67A",
+  cream = "#E8D4B1",
+  pale_brown = "#A58A6E",
+}
+
 local function apply_colors()
-	hl("Boolean", { fg = colors.constant })
-	hl("Character", { fg = colors.constant })
-	hl("Comment", { fg = colors.comment })
-	hl("Constant", { fg = colors.constant })
-	hl("CursorColumn", { bg = colors.cursorcolumn })
-	hl("CursorLine", { bg = colors.cursorline })
-	hl("CursorLineNr", { fg = colors.cursor_line_number, bg = colors.cursorline })
-	hl("Delimiter", { fg = colors.non_text })
-	hl("EndOfBuffer", { fg = colors.non_text })
-	hl("Function", { fg = colors.func })
-	hl("Identifier", { fg = colors.variable })
-	hl("Keyword", { fg = colors.keyword })
-	hl("LineNr", { fg = colors.line_number, bg = colors.background })
-	hl("NonText", { fg = colors.non_text })
-	hl("Normal", { fg = colors.foreground, bg = colors.background })
-	--hl("NormalFloat", { bg = colors.number })
-	hl("Number", { fg = colors.number })
-	hl("Operator", { fg = colors.grey })
-	hl("PreProc", { fg = colors.preprocessor })
-	hl("Special", { fg = colors.special })
-	hl("String", { fg = colors.string })
-	--hl("Tag", { fg = colors.keyword })
-	hl("Visual", { bg = colors.visual, fg = colors.background })
-	hl("Whitespace", { fg = colors.non_text })
-	hl("@variable", { fg = colors.variable_root })
+  hl("Normal", { fg = palette.beige, bg = palette.black })
+  hl("Comment", { fg = palette.grey, italic = true })
+  hl("Constant", { fg = palette.yellow_light })
+  hl("String", { fg = palette.orange })
+  hl("Character", { fg = palette.orange })
+  hl("Number", { fg = palette.yellow })
+  hl("Boolean", { fg = palette.yellow_strong })
+  hl("Float", { fg = palette.yellow })
+  hl("Identifier", { fg = palette.yellow_pale })
+  hl("Function", { fg = palette.yellow_light })
+  hl("Statement", { fg = palette.yellow_strong })
+  hl("Conditional", { fg = palette.yellow })
+  hl("Repeat", { fg = palette.yellow })
+  hl("Label", { fg = palette.yellow })
+  hl("Operator", { fg = palette.purple })
+  hl("Keyword", { fg = palette.yellow })
+  hl("Exception", { fg = palette.yellow })
+  hl("PreProc", { fg = palette.brown_orange })
+  hl("Include", { fg = palette.brown_orange })
+  hl("Define", { fg = palette.brown_orange })
+  hl("Macro", { fg = palette.brown_orange })
+  hl("PreCondit", { fg = palette.brown_orange })
+  hl("Type", { fg = palette.yellow_light })
+  hl("StorageClass", { fg = palette.yellow_light })
+  hl("Structure", { fg = palette.yellow_light })
+  hl("Typedef", { fg = palette.yellow_light })
+  hl("Special", { fg = palette.orange })
+  hl("SpecialChar", { fg = palette.orange })
+  hl("Tag", { fg = palette.orange })
+  hl("Delimiter", { fg = palette.grey_light })
+  hl("SpecialComment", { fg = palette.grey_light })
+  hl("Debug", { fg = palette.red })
+  hl("Underlined", { underline = true })
+  hl("Ignore", { fg = palette.grey })
+  hl("Error", { fg = palette.red })
+  hl("Todo", { fg = palette.yellow_pale, bg = palette.grey_dark, bold = true })
+  hl("CursorLine", { bg = palette.grey_dark })
+  hl("CursorLineNr", { fg = palette.yellow, bold = true })
+  hl("LineNr", { fg = palette.grey_light })
+  hl("SignColumn", { fg = palette.grey_light, bg = palette.black })
+  hl("StatusLine", { fg = palette.black, bg = palette.brown_orange })
+  hl("StatusLineNC", { fg = palette.grey_light, bg = palette.black })
+  hl("Visual", { bg = palette.grey_dark })
+  hl("Pmenu", { fg = palette.beige, bg = palette.grey_dark })
+  hl("PmenuSel", { fg = palette.black, bg = palette.yellow })
+  hl("PmenuSbar", { bg = palette.grey_dark })
+  hl("PmenuThumb", { bg = palette.grey })
+  hl("TabLine", { fg = palette.yellow_pale, bg = palette.black })
+  hl("TabLineFill", { fg = palette.black, bg = palette.grey_dark })
+  hl("TabLineSel", { fg = palette.yellow_light, bg = palette.grey_dark })
+  hl("DiffAdd", { fg = palette.yellow_pale, bg = palette.black })
+  hl("DiffChange", { fg = palette.blue, bg = palette.black })
+  hl("DiffDelete", { fg = palette.red, bg = palette.black })
+  hl("DiffText", { fg = palette.blue, bg = palette.black })
+  hl("DiagnosticError", { fg = palette.red })
+  hl("DiagnosticWarn", { fg = palette.yellow })
+  hl("DiagnosticInfo", { fg = palette.blue })
+  hl("DiagnosticHint", { fg = palette.grey })
+  hl("TSAnnotation", { fg = palette.grey_light })
+  hl("TSAttribute", { fg = palette.yellow_light })
+  hl("TSBoolean", { fg = palette.yellow })
+  hl("TSCharacter", { fg = palette.orange })
+  hl("TSComment", { fg = palette.grey, italic = true })
+  hl("TSConditional", { fg = palette.yellow })
+  hl("TSConstant", { fg = palette.yellow })
+  hl("TSConstBuiltin", { fg = palette.yellow_pale })
+  hl("TSConstMacro", { fg = palette.yellow_light })
+  hl("TSError", { fg = palette.red })
+  hl("TSException", { fg = palette.yellow })
+  hl("TSField", { fg = palette.yellow_pale })
+  hl("TSFloat", { fg = palette.yellow })
+  hl("TSFunction", { fg = palette.yellow_light })
+  hl("TSFuncBuiltin", { fg = palette.yellow_pale })
+  hl("TSFuncMacro", { fg = palette.yellow })
+  hl("TSKeyword", { fg = palette.yellow })
+  hl("TSKeywordFunction", { fg = palette.yellow })
+  hl("TSLabel", { fg = palette.yellow })
+  hl("TSMethod", { fg = palette.yellow_light })
+  hl("TSNamespace", { fg = palette.grey })
+  hl("TSNumber", { fg = palette.yellow })
+  hl("TSOperator", { fg = palette.purple })
+  hl("TSParameter", { fg = palette.yellow })
+  hl("TSProperty", { fg = palette.yellow })
+  hl("TSPunctDelimiter", { fg = palette.grey_dark })
+  hl("TSPunctBracket", { fg = palette.grey_dark })
+  hl("TSPunctSpecial", { fg = palette.grey_dark })
+  hl("TSString", { fg = palette.orange })
+  hl("TSStringRegex", { fg = palette.orange })
+  hl("TSStringEscape", { fg = palette.orange })
+  hl("TSSymbol", { fg = palette.yellow })
+  hl("TSType", { fg = palette.yellow })
+  hl("TSTypeBuiltin", { fg = palette.yellow })
+  hl("TSVariable", { fg = palette.yellow_pale })
+  hl("TSVariableBuiltin", { fg = palette.yellow })
+  hl("Title", { fg = palette.yellow_strong })
+  hl("@variable", { fg = palette.yellow_light })
 end
 
 function M.load()
-	vim.cmd("highlight clear")
-	vim.cmd("syntax reset")
-	vim.o.background = "dark"
-	apply_colors()
+  vim.cmd("highlight clear")
+  vim.cmd("syntax reset")
+  vim.o.background = "dark"
+  apply_colors()
 end
 
 return M

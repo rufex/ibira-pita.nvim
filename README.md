@@ -1,7 +1,6 @@
-
 # Ibirá-Pitá
 
-Yet another colorscheme for Neovim.
+Yet another colorscheme for Neovim, with a dark background and yellow as the predominant color.
 
 ## Installation
 
@@ -21,3 +20,14 @@ Using a plugin manager, such as `lazy.nvim`, add the following line to your
 ## TODO
 
 - [ ] Generate terminal colors with [termcolors.nvim](https://github.com/psliwka/termcolors.nvim)
+
+## Acknowledgements
+
+- [Vim colors](https://vimcolors.org/)
+- [Termcolors](https://github.com/psliwka/termcolors.nvim)
+- [Awesome Vim Colorschemes](https://github.com/rafi/awesome-vim-colorschemes)
+- [Kanagawa](https://github.com/rebelot/kanagawa.nvim)
+
+## [Peltophorum dubium](https://en.wikipedia.org/wiki/Peltophorum_dubium)
+
+![Peltophorum dubium](https://upload.wikimedia.org/wikipedia/commons/5/57/Peltophorum_dubium_%288460674606%29.jpg)
