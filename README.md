@@ -31,3 +31,5 @@ Using a plugin manager, such as `lazy.nvim`, add the following line to your
 ## [Peltophorum dubium](https://en.wikipedia.org/wiki/Peltophorum_dubium)
 
 ![Peltophorum dubium](https://upload.wikimedia.org/wikipedia/commons/5/57/Peltophorum_dubium_%288460674606%29.jpg)
+
+[Image by Tatters ❀ from Brisbane, Australia - Peltophorum dubium, CC BY-SA 2.0](https://commons.wikimedia.org/w/index.php?curid=32552185)
