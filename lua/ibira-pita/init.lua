@@ -6,9 +6,12 @@ end
 
 local palette = {
   black = "#0B0B0B",
+  black_light = "#181818",
+
   grey = "#8F847B",
   grey_light = "#BEB6AE",
   grey_dark = "#6C6C6C",
+  grey_darker = "#2C2C2C",
 
   yellow = "#D4A12E",
   yellow_light = "#E0B84A",
@@ -57,7 +60,7 @@ local function apply_colors()
   hl("Structure", { fg = palette.yellow_light })
   hl("Typedef", { fg = palette.yellow_light })
   hl("Special", { fg = palette.orange })
-  hl("SpecialChar", { fg = palette.orange })
+  hl("SpecialChar", { fg = palette.purple })
   hl("Tag", { fg = palette.orange })
   hl("Delimiter", { fg = palette.grey_light })
   hl("SpecialComment", { fg = palette.grey_light })
@@ -66,13 +69,13 @@ local function apply_colors()
   hl("Ignore", { fg = palette.grey })
   hl("Error", { fg = palette.red })
   hl("Todo", { fg = palette.yellow_pale, bg = palette.grey_dark, bold = true })
-  hl("CursorLine", { bg = palette.grey_dark })
+  hl("CursorLine", { bg = palette.black_light })
   hl("CursorLineNr", { fg = palette.yellow, bold = true })
   hl("LineNr", { fg = palette.grey })
   hl("SignColumn", { fg = palette.grey_light, bg = palette.black })
   hl("StatusLine", { fg = palette.black, bg = palette.brown_orange })
   hl("StatusLineNC", { fg = palette.grey_light, bg = palette.black })
-  hl("Visual", { bg = palette.grey_dark })
+  hl("Visual", { bg = palette.grey_darker })
   hl("Pmenu", { fg = palette.beige, bg = palette.grey_dark })
   hl("PmenuSel", { fg = palette.black, bg = palette.yellow })
   hl("PmenuSbar", { bg = palette.grey_dark })
