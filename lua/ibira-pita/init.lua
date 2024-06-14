@@ -8,7 +8,7 @@ local palette = {
   black = "#0B0B0B",
   grey = "#8F847B",
   grey_light = "#BEB6AE",
-  grey_dark = "#3A3A3A",
+  grey_dark = "#6C6C6C",
 
   yellow = "#D4A12E",
   yellow_light = "#E0B84A",
@@ -45,7 +45,7 @@ local function apply_colors()
   hl("Repeat", { fg = palette.yellow })
   hl("Label", { fg = palette.yellow })
   hl("Operator", { fg = palette.purple })
-  hl("Keyword", { fg = palette.yellow })
+  hl("Keyword", { fg = palette.grey_dark })
   hl("Exception", { fg = palette.yellow })
   hl("PreProc", { fg = palette.brown_orange })
   hl("Include", { fg = palette.brown_orange })
