@@ -21,7 +21,7 @@ local palette = {
   red = "#D16D69",
   red_light = "#E0898D",
 
-  purple = "#785660",
+  purple = "#885064",
   blue = "#5F99D3",
 
   beige = "#C4A67A",
@@ -68,7 +68,7 @@ local function apply_colors()
   hl("Todo", { fg = palette.yellow_pale, bg = palette.grey_dark, bold = true })
   hl("CursorLine", { bg = palette.grey_dark })
   hl("CursorLineNr", { fg = palette.yellow, bold = true })
-  hl("LineNr", { fg = palette.grey_light })
+  hl("LineNr", { fg = palette.grey })
   hl("SignColumn", { fg = palette.grey_light, bg = palette.black })
   hl("StatusLine", { fg = palette.black, bg = palette.brown_orange })
   hl("StatusLineNC", { fg = palette.grey_light, bg = palette.black })
