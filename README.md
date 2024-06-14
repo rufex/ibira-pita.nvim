@@ -17,6 +17,10 @@ Using a plugin manager, such as `lazy.nvim`, add the following line to your
   },
 ```
 
+## Screenshots
+
+![Screenshot-1](./assets/ibira-pita.png)
+
 ## TODO
 
 - [ ] Generate terminal colors with [termcolors.nvim](https://github.com/psliwka/termcolors.nvim)
