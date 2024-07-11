@@ -5,30 +5,29 @@ local function hl(group, color)
 end
 
 local palette = {
-  black = "#0B0B0B",
+  black = "#0C0C0C",
   black_light = "#181818",
-
+  grey_darker = "#2C2C2C",
+  grey_dark = "#6C6C6C",
   grey = "#8F847B",
   grey_light = "#BEB6AE",
-  grey_dark = "#6C6C6C",
-  grey_darker = "#2C2C2C",
 
   yellow = "#D4A12E",
   yellow_light = "#E0B84A",
   yellow_pale = "#F2CA72",
   yellow_strong = "#F0D020",
 
-  brown_orange = "#C97C47",
+  brown_orange = "#C96940",
   orange = "#D98A5D",
 
-  red = "#D16D69",
+  red = "#D96D69",
   red_light = "#E0898D",
 
   purple = "#885064",
   blue = "#5F99D3",
 
-  beige = "#C4A67A",
-  cream = "#E8D4B1",
+  beige = "#C3A07A",
+  cream = "#E8D0B0",
   pale_brown = "#A58A6E",
 }
 
@@ -57,7 +56,7 @@ local function apply_colors()
   hl("PreCondit", { fg = palette.brown_orange })
   hl("Type", { fg = palette.yellow_light })
   hl("StorageClass", { fg = palette.yellow_light })
-  hl("Structure", { fg = palette.yellow_light })
+  hl("Structure", { fg = palette.beige })
   hl("Typedef", { fg = palette.yellow_light })
   hl("Special", { fg = palette.orange })
   hl("SpecialChar", { fg = palette.purple })
@@ -128,7 +127,16 @@ local function apply_colors()
   hl("TSVariable", { fg = palette.yellow_pale })
   hl("TSVariableBuiltin", { fg = palette.yellow })
   hl("Title", { fg = palette.yellow_strong })
-  hl("@variable", { fg = palette.yellow_light })
+  hl("@variable", { fg = palette.red })
+  hl("Directory", { fg = palette.orange })
+  hl("SignAdd", { fg = palette.yellow_pale })
+  hl("SignChange", { fg = palette.blue })
+  hl("SignDelete", { fg = palette.red })
+
+  hl("GitSignsAdd", { fg = palette.purple })
+  hl("GitSignsChange", { fg = palette.purple })
+  hl("GitSignsDelete", { fg = palette.purple })
+  hl("GitSignsChangeDelete", { fg = palette.purple })
 end
 
 function M.load()
