@@ -1,0 +1,21 @@
+*ibira-pita.txt*                 Neovim Colorscheme.
+
+==============================================================================
+
+1. installation                                    *ibira-pita-installation*
+
+Use your favorite plugin manager to add `Ibirá-Pita`. For example, with Lazy.vim:
+
+>lua
+  {
+    'rufex/ibira-pita.nvim',
+    priority = 1000,
+    init = function()
+      vim.cmd.colorscheme 'ibira-pita'
+    end,
+  },
+<
+
+==============================================================================
+
+vim:tw=78:ts=8:ft=help:norl
