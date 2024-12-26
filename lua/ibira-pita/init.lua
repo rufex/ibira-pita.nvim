@@ -132,11 +132,53 @@ local function apply_colors()
   hl("SignAdd", { fg = palette.yellow_pale })
   hl("SignChange", { fg = palette.blue })
   hl("SignDelete", { fg = palette.red })
+  hl("Search", { fg = palette.black, bg = palette.yellow })
+  hl("IncSearch", { fg = palette.black, bg = palette.yellow_strong })
+  hl("SpellBad", { undercurl = true, sp = palette.red })
+  hl("SpellCap", { undercurl = true, sp = palette.yellow })
+  hl("SpellLocal", { undercurl = true, sp = palette.blue })
+  hl("SpellRare", { undercurl = true, sp = palette.purple })
+  hl("Folded", { fg = palette.grey, bg = palette.black_light })
+  hl("FoldColumn", { fg = palette.grey, bg = palette.black })
+  hl("ErrorMsg", { fg = palette.red, bold = true })
+  hl("WarningMsg", { fg = palette.yellow, bold = true })
+  hl("MoreMsg", { fg = palette.yellow_pale })
+  hl("Question", { fg = palette.yellow_light })
 
   hl("GitSignsAdd", { fg = palette.purple })
   hl("GitSignsChange", { fg = palette.purple })
   hl("GitSignsDelete", { fg = palette.purple })
   hl("GitSignsChangeDelete", { fg = palette.purple })
+
+  hl("TelescopeNormal", { fg = palette.beige, bg = palette.black })
+  hl("TelescopeBorder", { fg = palette.grey_darker, bg = palette.black })
+  hl("TelescopeSelection", { fg = palette.yellow, bg = palette.grey_darker })
+
+  hl("TreesitterContext", { bg = palette.black_light })
+
+  hl("LspReferenceText", { bg = palette.grey_darker })
+  hl("LspReferenceRead", { bg = palette.grey_darker })
+  hl("LspReferenceWrite", { bg = palette.grey_darker })
+  hl("LspSignatureActiveParameter", { fg = palette.yellow_strong })
+end
+
+local function set_terminal_colors()
+  vim.g.terminal_color_0 = palette.black
+  vim.g.terminal_color_1 = palette.red
+  vim.g.terminal_color_2 = palette.yellow_pale
+  vim.g.terminal_color_3 = palette.yellow
+  vim.g.terminal_color_4 = palette.blue
+  vim.g.terminal_color_5 = palette.purple
+  vim.g.terminal_color_6 = palette.orange
+  vim.g.terminal_color_7 = palette.grey_light
+  vim.g.terminal_color_8 = palette.grey_dark
+  vim.g.terminal_color_9 = palette.red_light
+  vim.g.terminal_color_10 = palette.yellow_light
+  vim.g.terminal_color_11 = palette.yellow_strong
+  vim.g.terminal_color_12 = palette.blue
+  vim.g.terminal_color_13 = palette.purple
+  vim.g.terminal_color_14 = palette.brown_orange
+  vim.g.terminal_color_15 = palette.cream
 end
 
 function M.load()
@@ -144,6 +186,7 @@ function M.load()
   vim.cmd("syntax reset")
   vim.o.background = "dark"
   apply_colors()
+  set_terminal_colors()
 end
 
 return M
