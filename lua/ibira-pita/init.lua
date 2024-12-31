@@ -15,12 +15,12 @@ local palette = {
   yellow = "#D4A12E",
   yellow_light = "#E0B84A",
   yellow_pale = "#F2CA72",
-  yellow_strong = "#F0D020",
+  yellow_strong = "#E0C010",
 
   brown_orange = "#C96940",
   orange = "#D98A5D",
 
-  red = "#D96D69",
+  red = "#D95A60",
   red_light = "#E0898D",
 
   purple = "#885064",
@@ -35,7 +35,7 @@ local function apply_colors()
   hl("Normal", { fg = palette.beige, bg = palette.black })
   hl("Comment", { fg = palette.grey, italic = true })
   hl("Constant", { fg = palette.yellow_light })
-  hl("String", { fg = palette.orange })
+  hl("String", { fg = palette.yellow_strong })
   hl("Character", { fg = palette.orange })
   hl("Number", { fg = palette.yellow })
   hl("Boolean", { fg = palette.yellow_strong })
@@ -58,7 +58,7 @@ local function apply_colors()
   hl("StorageClass", { fg = palette.yellow_light })
   hl("Structure", { fg = palette.beige })
   hl("Typedef", { fg = palette.yellow_light })
-  hl("Special", { fg = palette.orange })
+  hl("Special", { fg = palette.purple })
   hl("SpecialChar", { fg = palette.purple })
   hl("Tag", { fg = palette.orange })
   hl("Delimiter", { fg = palette.grey_light })
@@ -119,8 +119,8 @@ local function apply_colors()
   hl("TSPunctBracket", { fg = palette.grey_dark })
   hl("TSPunctSpecial", { fg = palette.grey_dark })
   hl("TSString", { fg = palette.orange })
-  hl("TSStringRegex", { fg = palette.orange })
-  hl("TSStringEscape", { fg = palette.orange })
+  hl("TSStringRegex", { fg = palette.purple })
+  hl("TSStringEscape", { fg = palette.purple })
   hl("TSSymbol", { fg = palette.yellow })
   hl("TSType", { fg = palette.yellow })
   hl("TSTypeBuiltin", { fg = palette.yellow })
@@ -160,6 +160,40 @@ local function apply_colors()
   hl("LspReferenceRead", { bg = palette.grey_darker })
   hl("LspReferenceWrite", { bg = palette.grey_darker })
   hl("LspSignatureActiveParameter", { fg = palette.yellow_strong })
+
+  -- Vue.js specific highlights
+  hl("vueComponentName", { fg = palette.yellow_light }) -- Component names
+  hl("vueTag", { fg = palette.yellow_pale }) -- HTML tags
+  hl("vueDirective", { fg = palette.purple }) -- v-if, v-for, etc
+  hl("vueAttr", { fg = palette.yellow }) -- Component props/attributes
+  hl("vueMethod", { fg = palette.yellow_light }) -- Methods
+  hl("vueComputed", { fg = palette.yellow_light }) -- Computed properties
+  hl("vueWatch", { fg = palette.yellow_light }) -- Watch properties
+  hl("vueEmit", { fg = palette.yellow_pale }) -- Emits
+  hl("vueProps", { fg = palette.yellow }) -- Props definitions
+  hl("vueData", { fg = palette.yellow_pale }) -- Data properties
+  hl("vueFilter", { fg = palette.purple }) -- Filters
+  hl("vueInterpolation", { fg = palette.yellow_strong }) -- {{ interpolation }}
+  hl("vueTemplate", { fg = palette.grey_light }) -- <template> tag
+  hl("vueScript", { fg = palette.grey_light }) -- <script> tag
+  hl("vueStyle", { fg = palette.grey_light }) -- <style> tag
+  hl("vueTemplateLiteral", { fg = palette.orange })
+  hl("vueSetupKeyword", { fg = palette.purple }) -- 'setup' keyword
+  hl("vueRef", { fg = palette.yellow_pale }) -- ref declarations
+  hl("vueReactive", { fg = palette.yellow_pale }) -- reactive declarations
+  hl("vueComposable", { fg = palette.yellow_light }) -- composable functions
+  hl("vueLifecycleHook", { fg = palette.purple }) -- onMounted, etc
+  hl("vueRouter", { fg = palette.yellow_light }) -- Router related code
+  hl("vueStore", { fg = palette.yellow_light }) -- Store related code
+  hl("vueTypeScript", { fg = palette.yellow }) -- TypeScript annotations
+  hl("vueInterface", { fg = palette.yellow_light }) -- Interfaces
+  hl("vueType", { fg = palette.yellow_light }) -- Type definitions
+  hl("@vue.component", { fg = palette.yellow_light })
+  hl("@vue.directive", { fg = palette.purple })
+  hl("@vue.expression", { fg = palette.yellow_strong })
+  hl("@vue.interpolation", { fg = palette.yellow_strong })
+  hl("@vue.script_setup", { fg = palette.purple })
+  hl("@vue.template_tag", { fg = palette.grey_light })
 end
 
 local function set_terminal_colors()
