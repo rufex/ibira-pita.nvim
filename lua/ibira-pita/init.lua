@@ -8,27 +8,22 @@ local palette = {
   black = "#0C0C0C",
   black_light = "#181818",
   grey_darker = "#2C2C2C",
-  grey_dark = "#6C6C6C",
-  grey = "#8F847B",
-  grey_light = "#BEB6AE",
-
-  yellow = "#D4A12E",
-  yellow_light = "#E0B84A",
-  yellow_pale = "#F2CA72",
-  yellow_strong = "#E0C010",
-
-  brown_orange = "#C96940",
-  orange = "#D98A5D",
-
-  red = "#D95A60",
-  red_light = "#E0898D",
-
-  purple = "#885064",
-  blue = "#5F99D3",
-
-  beige = "#C3A07A",
-  cream = "#E8D0B0",
-  pale_brown = "#A58A6E",
+  grey_dark = "#5D5D5D",
+  grey = "#847D74",
+  grey_light = "#B1AAA2",
+  yellow = "#BC9538",
+  yellow_light = "#CAA854",
+  yellow_pale = "#D8BF7C",
+  yellow_strong = "#C8AF28",
+  purple = "#8A5570",
+  blue = "#6A8CB0",
+  brown_orange = "#B06844",
+  orange = "#C57D55",
+  red = "#B84A4F",
+  red_light = "#C8817F",
+  beige = "#C0A580",
+  cream = "#D8C59F",
+  pale_brown = "#A08570",
 }
 
 local function apply_colors()
