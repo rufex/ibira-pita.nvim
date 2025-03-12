@@ -156,6 +156,12 @@ local function apply_colors()
   hl("LspReferenceWrite", { bg = palette.grey_darker })
   hl("LspSignatureActiveParameter", { fg = palette.yellow_strong })
 
+  -- Ruby
+  hl("@variable.member.ruby", { fg = palette.purple })
+  hl("@string.ruby", { fg = palette.orange })
+  hl("@constant.ruby", { fg = palette.purple })
+  hl("@type.ruby", { fg = palette.pale_brown })
+
   -- Vue.js specific highlights
   hl("vueComponentName", { fg = palette.yellow_light }) -- Component names
   hl("vueTag", { fg = palette.yellow_pale }) -- HTML tags
