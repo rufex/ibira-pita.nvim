@@ -19,11 +19,7 @@ Using a plugin manager, such as `lazy.nvim`, add the following line to your
 
 ## Screenshots
 
-![Screenshot-1](./assets/ibira-pita.png)
-
-## TODO
-
-- [ ] Generate terminal colors with [termcolors.nvim](https://github.com/psliwka/termcolors.nvim)
+![Screenshot-1](./assets/ibira-1.png)
 
 ## Acknowledgements
 
@@ -34,6 +30,4 @@ Using a plugin manager, such as `lazy.nvim`, add the following line to your
 
 ## [Peltophorum dubium](https://en.wikipedia.org/wiki/Peltophorum_dubium)
 
-![Peltophorum dubium](https://upload.wikimedia.org/wikipedia/commons/5/57/Peltophorum_dubium_%288460674606%29.jpg)
-
-[Image by Tatters ❀ from Brisbane, Australia - Peltophorum dubium, CC BY-SA 2.0](https://commons.wikimedia.org/w/index.php?curid=32552185)
+![Peltophorum dubium](https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Ibira_pita.JPG/640px-Ibira_pita.JPG)
