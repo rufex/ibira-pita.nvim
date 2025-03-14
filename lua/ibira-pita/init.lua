@@ -5,8 +5,8 @@ local function hl(group, color)
 end
 
 local palette = {
-  black = "#0C0C0C",
-  black_light = "#181818",
+  black = "#12161C",
+  black_light = "#1D1D1D",
   grey_darker = "#2C2C2C",
   grey_dark = "#5D5D5D",
   grey = "#847D74",
