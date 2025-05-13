@@ -24,6 +24,7 @@ local palette = {
   beige = "#C0A580",
   cream = "#D8C59F",
   pale_brown = "#A08570",
+  green = "#A8B65D",
 }
 
 local function apply_colors()
@@ -200,7 +201,7 @@ end
 local function set_terminal_colors()
   vim.g.terminal_color_0 = palette.black
   vim.g.terminal_color_1 = palette.red
-  vim.g.terminal_color_2 = palette.yellow_pale
+  vim.g.terminal_color_2 = palette.green
   vim.g.terminal_color_3 = palette.yellow
   vim.g.terminal_color_4 = palette.blue
   vim.g.terminal_color_5 = palette.purple
