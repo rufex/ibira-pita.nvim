@@ -197,6 +197,14 @@ local function apply_colors()
   hl("@vue.interpolation", { fg = palette.yellow_strong })
   hl("@vue.script_setup", { fg = palette.purple })
   hl("@vue.template_tag", { fg = palette.grey_light })
+
+  -- Mini.Tabline
+  hl("MiniTablineCurrent", { fg = palette.brown_orange, bg = palette.black_light })
+  hl("MiniTablineModifiedCurrent", { fg = palette.grey_dark, bg = palette.black_light })
+  hl("MiniTablineVisible", { fg = palette.grey_dark, bg = palette.black })
+  hl("MiniTablineModifiedVisible", { fg = palette.grey_dark, bg = palette.black })
+  hl("MiniTablineHidden", { fg = palette.grey_dark, bg = palette.black })
+  hl("MiniTablineModifiedHidden", { fg = palette.grey_dark, bg = palette.black })
 end
 
 local function set_terminal_colors()
