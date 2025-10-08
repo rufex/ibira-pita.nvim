@@ -72,7 +72,8 @@ local function apply_colors()
   hl("StatusLine", { fg = palette.black, bg = palette.brown_orange })
   hl("StatusLineNC", { fg = palette.grey_light, bg = palette.black })
   hl("Visual", { bg = palette.grey_darker })
-  hl("Pmenu", { fg = palette.beige, bg = palette.grey_dark })
+  hl("NormalFloat", { fg = palette.beige, bg = palette.black }) -- Same As Normal
+  hl("Pmenu", { fg = palette.beige, bg = palette.black }) -- Same as Normal
   hl("PmenuSel", { fg = palette.black, bg = palette.yellow })
   hl("PmenuSbar", { bg = palette.grey_dark })
   hl("PmenuThumb", { bg = palette.grey })
