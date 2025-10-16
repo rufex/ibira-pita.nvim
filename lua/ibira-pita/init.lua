@@ -206,6 +206,26 @@ local function apply_colors()
   hl("MiniTablineModifiedVisible", { fg = palette.grey_dark, bg = palette.black })
   hl("MiniTablineHidden", { fg = palette.grey_dark, bg = palette.black })
   hl("MiniTablineModifiedHidden", { fg = palette.grey_dark, bg = palette.black })
+
+  -- Mini.Diff
+  hl("MiniDiffSignAdd", { fg = palette.purple, bg = palette.black })
+  hl("MiniDiffSignChange", { fg = palette.purple, bg = palette.black })
+  hl("MiniDiffSignDelete", { fg = palette.brown_orange, bg = palette.black })
+  hl("MiniDiffOverAdd", { fg = palette.purple, bg = palette.black, bold = true })
+  hl("MiniDiffOverChange", { fg = palette.grey_dark, bg = palette.black_light, bold = true })
+  hl("MiniDiffOverContext", { fg = palette.grey_dark, bg = palette.black, bold = true })
+  hl("MiniDiffOverChangeBuf", { fg = palette.purple, bg = palette.black_light, bold = true })
+  hl("MiniDiffOverContextBuf", { fg = palette.purple, bg = palette.black, bold = true })
+  hl("MiniDiffOverDelete", { fg = palette.brown_orange, bg = palette.black, bold = true })
+
+  -- Neogit Diff
+  hl("NeogitDiffAdd", { fg = palette.green, bg = palette.black_light })
+  hl("NeogitDiffDelete", { fg = palette.brown_orange, bg = palette.black_light })
+  hl("NeogitDiffChange", { fg = palette.purple, bg = palette.black_light })
+  hl("NeogitDiffAddHighlight", { fg = palette.green, bg = palette.black_light, bold = true })
+  hl("NeogitDiffDeleteHighlight", { fg = palette.brown_orange, bg = palette.black_light, bold = true })
+  hl("NeogitDiffChangeHighlight", { fg = palette.purple, bg = palette.black_light, bold = true })
+  hl("NeogitDiffContextHighlight", { fg = palette.grey_light, bg = palette.black, bold = true })
 end
 
 local function set_terminal_colors()
