@@ -1,31 +1,10 @@
 local M = {}
 
+local palette = require("ibira-pita.color-palette")
+
 local function hl(group, color)
   vim.api.nvim_set_hl(0, group, color)
 end
-
-local palette = {
-  black = "#12161C",
-  black_light = "#1D1D1D",
-  grey_darker = "#2C2C2C",
-  grey_dark = "#5D5D5D",
-  grey = "#847D74",
-  grey_light = "#B1AAA2",
-  yellow = "#BC9538",
-  yellow_light = "#CAA854",
-  yellow_pale = "#D8BF7C",
-  yellow_strong = "#C8AF28",
-  purple = "#8A5570",
-  blue = "#6A8CB0",
-  brown_orange = "#B06844",
-  orange = "#C57D55",
-  red = "#B84A4F",
-  red_light = "#C8817F",
-  beige = "#C0A580",
-  cream = "#D8C59F",
-  pale_brown = "#A08570",
-  green = "#A8B65D",
-}
 
 local function apply_colors()
   hl("Normal", { fg = palette.beige, bg = palette.black })
