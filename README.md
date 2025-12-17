@@ -17,6 +17,47 @@ Using a plugin manager, such as `lazy.nvim`, add the following line to your
   },
 ```
 
+## Other applications
+
+### Batcat
+
+The purple variant of this colorscheme is also available as a theme for [bat](https://github.com/sharkdp/bat), a modern alternative to `cat` with syntax highlighting.
+
+#### Installation
+
+1. Copy the theme file to bat's themes directory:
+
+```bash
+mkdir -p "$(bat --config-dir)/themes"
+cp themes/ibira-pita-purple.tmTheme "$(bat --config-dir)/themes/"
+```
+
+2. Rebuild bat's cache:
+
+```bash
+batcat cache --build
+```
+
+3. Verify the theme is available:
+
+```bash
+bat --list-themes | grep ibira
+```
+
+### Usage
+
+Use the theme for a single file:
+
+```bash
+bat --theme="ibira-pita-purple" myfile.py
+```
+
+Set it as the default theme by adding the following to `$(bat --config-dir)/config`:
+
+```
+--theme="ibira-pita-purple"
+```
+
 ## Screenshots
 
 ![Screenshot-1](./assets/ibira-1.png)
