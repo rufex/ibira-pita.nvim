@@ -202,6 +202,20 @@ local function apply_colors()
   hl("NeogitDiffChangeHighlight", { fg = palette.yellow, bg = palette.black_light, bold = true })
   hl("NeogitDiffDeleteHighlight", { fg = palette.red, bg = palette.black_light, bold = true })
   hl("NeogitDiffContextHighlight", { fg = palette.grey_light, bg = palette.black, bold = true })
+
+  -- Obsidian.nvim
+  hl("ObsidianTodo", { fg = palette.orange, bold = true })
+  hl("ObsidianDone", { fg = palette.grey })
+  hl("ObsidianRightArrow", { fg = palette.purple_light })
+  hl("ObsidianTilde", { fg = palette.grey })
+  hl("ObsidianImportant", { fg = palette.brown_orange_dark, bold = true })
+  hl("ObsidianBullet", { fg = palette.grey_light })
+  hl("ObsidianRefText", { fg = palette.purple, underline = true })
+  hl("ObsidianExtLinkIcon", { fg = palette.purple_light })
+  hl("ObsidianTag", { fg = palette.brown_orange, italic = true })
+  hl("ObsidianBlockID", { fg = palette.grey_dark })
+  hl("ObsidianHighlightText", { fg = palette.black, bg = palette.orange })
+  hl("ObsidianUI", { fg = palette.beige })
 end
 
 local function set_terminal_colors()
