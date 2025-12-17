@@ -29,7 +29,7 @@ The purple variant of this colorscheme is also available as a theme for [bat](ht
 
 ```bash
 mkdir -p "$(bat --config-dir)/themes"
-cp themes/ibira-pita-purple.tmTheme "$(bat --config-dir)/themes/"
+cp themes/bat/ibira-pita-purple.tmTheme "$(bat --config-dir)/themes/"
 ```
 
 2. Rebuild bat's cache:
@@ -57,6 +57,29 @@ Set it as the default theme by adding the following to `$(bat --config-dir)/conf
 ```
 --theme="ibira-pita-purple"
 ```
+
+### Eza
+
+The purple variant is also available as a theme for [eza](https://github.com/eza-community/eza), a modern replacement for `ls`.
+
+#### Installation
+
+Copy the theme file to eza's configuration directory:
+
+```bash
+mkdir -p ~/.config/eza
+cp themes/eza/ibira-pita-purple.yml ~/.config/eza/theme.yml
+```
+
+#### Usage
+
+The theme will be applied automatically when running eza:
+
+```bash
+eza --long --all --color=always
+```
+
+**Note**: If you have `LS_COLORS` or `EZA_COLORS` environment variables set, they will override the theme file. Unset them to use the theme properly.
 
 ## Screenshots
 

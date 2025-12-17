@@ -1,0 +1,118 @@
+# Ibira Pita Purple - Eza Theme
+# Installation: Copy to ~/.config/eza/theme.yml
+# Or set EZA_CONFIG_DIR to point to the directory containing this file
+#
+# Color palette:
+# yellow = #BC9538
+# purple_light = #9A5F7D
+# purple = #8A5570
+# purple_darker = #6A4256
+# brown_orange = #B06844
+# brown_orange_dark = #8A4E2F
+# grey_light = #B1AAA2
+# grey_dark = #5D5D5D
+# red = #E15454
+# black = #12161C
+
+colourful: true
+
+filekinds:
+  normal: {foreground: "#B1AAA2"}
+  directory: {foreground: "#BC9538"}
+  symlink: {foreground: "#8A5570"}
+  pipe: {foreground: "#6A4256"}
+  block_device: {foreground: "#8A4E2F"}
+  char_device: {foreground: "#8A4E2F"}
+  socket: {foreground: "#6A4256"}
+  special: {foreground: "#9A5F7D"}
+  executable: {foreground: "#B06844"}
+  mount_point: {foreground: "#9A5F7D"}
+
+perms:
+  user_read: {foreground: "#B1AAA2"}
+  user_write: {foreground: "#B06844"}
+  user_execute_file: {foreground: "#8A5570"}
+  user_execute_other: {foreground: "#8A5570"}
+  group_read: {foreground: "#B1AAA2"}
+  group_write: {foreground: "#B06844"}
+  group_execute: {foreground: "#8A5570"}
+  other_read: {foreground: "#B1AAA2"}
+  other_write: {foreground: "#B06844"}
+  other_execute: {foreground: "#8A5570"}
+  special_user_file: {foreground: "#9A5F7D"}
+  special_other: {foreground: "#6A4256"}
+  attribute: {foreground: "#B1AAA2"}
+
+size:
+  major: {foreground: "#B06844"}
+  minor: {foreground: "#8A5570"}
+  number_byte: {foreground: "#B1AAA2"}
+  number_kilo: {foreground: "#B1AAA2"}
+  number_mega: {foreground: "#8A5570"}
+  number_giga: {foreground: "#9A5F7D"}
+  number_huge: {foreground: "#E15454"}
+  unit_byte: {foreground: "#B1AAA2"}
+  unit_kilo: {foreground: "#8A5570"}
+  unit_mega: {foreground: "#9A5F7D"}
+  unit_giga: {foreground: "#9A5F7D"}
+  unit_huge: {foreground: "#E15454"}
+
+users:
+  user_you: {foreground: "#8A5570"}
+  user_root: {foreground: "#E15454"}
+  user_other: {foreground: "#8A5570"}
+  group_yours: {foreground: "#8A5570"}
+  group_other: {foreground: "#6A4256"}
+  group_root: {foreground: "#E15454"}
+
+links:
+  normal: {foreground: "#8A5570"}
+  multi_link_file: {foreground: "#B06844"}
+
+git:
+  new: {foreground: "#B06844"}
+  modified: {foreground: "#9A5F7D"}
+  deleted: {foreground: "#E15454"}
+  renamed: {foreground: "#8A5570"}
+  typechange: {foreground: "#B06844"}
+  ignored: {foreground: "#5D5D5D"}
+  conflicted: {foreground: "#E15454"}
+
+git_repo:
+  branch_main: {foreground: "#B1AAA2"}
+  branch_other: {foreground: "#9A5F7D"}
+  git_clean: {foreground: "#B06844"}
+  git_dirty: {foreground: "#E15454"}
+
+security_context:
+  colon: {foreground: "#6A4256"}
+  user: {foreground: "#B1AAA2"}
+  role: {foreground: "#9A5F7D"}
+  typ: {foreground: "#6A4256"}
+  range: {foreground: "#8A5570"}
+
+file_type:
+  image: {foreground: "#9A5F7D"}
+  video: {foreground: "#8A5570"}
+  music: {foreground: "#B06844"}
+  lossless: {foreground: "#B06844"}
+  crypto: {foreground: "#6A4256"}
+  document: {foreground: "#B06844"}
+  compressed: {foreground: "#8A4E2F"}
+  temp: {foreground: "#5D5D5D"}
+  compiled: {foreground: "#5D5D5D"}
+  build: {foreground: "#6A4256"}
+  source: {foreground: "#8A5570"}
+
+punctuation: {foreground: "#6A4256"}
+date: {foreground: "#B06844"}
+inode: {foreground: "#B1AAA2"}
+blocks: {foreground: "#B1AAA2"}
+header: {foreground: "#8A5570"}
+octal: {foreground: "#8A5570"}
+flags: {foreground: "#9A5F7D"}
+
+symlink_path: {foreground: "#8A5570"}
+control_char: {foreground: "#8A5570"}
+broken_symlink: {foreground: "#E15454"}
+broken_path_overlay: {foreground: "#5D5D5D"}
