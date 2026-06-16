@@ -250,6 +250,9 @@ local function apply_colors()
   hl("ObsidianBlockID", { fg = palette.grey_dark })
   hl("ObsidianHighlightText", { fg = palette.black, bg = palette.orange })
   hl("ObsidianUI", { fg = palette.beige })
+
+  -- Custom ==highlight== for markdown
+  hl("@markup.highlight", { fg = palette.black, bg = palette.brown_orange_dark })
 end
 
 local function set_terminal_colors()
